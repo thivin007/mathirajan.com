@@ -14,18 +14,16 @@ body {
     background-size: cover;
     position: realtive;
 }
-  
-.hero-text {
+
+
+.h1news{
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    
 }
 
+
 h1 {
-    color: blue;
+    color: rgb(255, 255, 255);
     transform: translate(0%, 50%);
     font-size: 90px;
 }
@@ -34,7 +32,7 @@ h1 {
 
 
 p {
-    color: rgb(68, 0, 255);
+    color: rgb(255, 255, 255);
     transform: translate(0%, 50%);
     font-size: 25px;
     
@@ -43,7 +41,7 @@ p {
 
 ul {
     list-style-type: none;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     width: 150px;
@@ -66,13 +64,28 @@ li a:hover {
     transition: 0.25s;
 }
 
-
+.nav{
+    position: absolute;
+}
 
 .albaner-image {
 
-    transform: translate(50%, 50%);
-
-    position: absolute;
+    transform: translate(-50%, 80%);
+     position: absolute;
 
 
 } 
+
+
+.rick
+{
+   
+  
+    width:100%;
+    float:left;
+    text-align:center;
+
+
+} 
+
+
