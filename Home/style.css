@@ -1,0 +1,172 @@
+/* Grundlayout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0b1622, #1a2739);
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ☰ Menü-Button oben links */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #1a73e8;
+  color: white;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 260px;
+  height: 100%;
+  background-color: #111820;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1002;
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.sidebar-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Sidebar-Links */
+.nav-link-sidebar {
+  display: block;
+  background-color: #1a2739;
+  border: 1px solid #2e3d4e;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.nav-link-sidebar:hover {
+  background-color: #223144;
+}
+
+/* Navigation unten */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0b1622;
+  border-top: 1px solid #1e2a38;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #1a2739;
+  color: white;
+}
+
+.nav-link.active {
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+}
+
+/* Optional: Layout-Boxen z. B. für .hero, .steps, .service */
+.hero, .how-it-works, .services {
+  padding: 60px 20px 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #1a73e8;
+  border: none;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.steps, .service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.step, .service {
+  background-color: #121f30;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1e2a38;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .steps, .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

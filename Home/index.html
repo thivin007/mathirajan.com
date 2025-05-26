@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Automation Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button class="menu-toggle" onclick="openSidebar()">☰</button>
+
+ <!-- Sidebar Navigation -->
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <span>Navigation</span>
+    <button onclick="closeSidebar()">×</button>
+  </div>
+  <a href="../Home/index.html" class="nav-link-sidebar">🏠 Home</a>
+  <a href="../Automations/automations.html" class="nav-link-sidebar">🤖 Automations</a>
+  <a href="../success/success.html" class="nav-link-sidebar">📈 Success Stories</a>
+  <a href="../pricing/pricing.html" class="nav-link-sidebar">💰 Pricing</a>
+  <a href="../about/about.html" class="nav-link-sidebar">👤 About</a>
+  <a href="../contact/contact.html" class="nav-link-sidebar">✉️ Contact</a>
+</div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+  <!-- Main Content -->
+  <section class="hero">
+    <div class="content">
+      <h1>Automate your<br>business with AI</h1>
+      <p>We build custom AI automations to help you save time and money. Our team of experts will work with you to understand your business needs and create a solution that fits your budget.</p>
+      <button onclick="getStarted()">Get started</button>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How it works</h2>
+    <p>We’ll work with you to understand your business needs and create a custom AI automation solution.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Consultation</h3>
+        <p>We’ll discuss your business goals and identify areas where AI automation can help.</p>
+      </div>
+      <div class="step">
+        <h3>Development</h3>
+        <p>Our team of experts will build a custom AI automation solution tailored to your needs.</p>
+      </div>
+      <div class="step">
+        <h3>Deployment</h3>
+        <p>We’ll deploy your AI automation solution and provide ongoing support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our services</h2>
+    <p>We offer a range of AI automation services to help you streamline your business processes.</p>
+    <div class="service-grid">
+      <div class="service">
+        <h4>Lead generation</h4>
+        <p>Automate your lead generation process to find and qualify potential customers.</p>
+      </div>
+      <div class="service">
+        <h4>Customer service</h4>
+        <p>Improve your customer service with AI-powered chatbots and virtual assistants.</p>
+      </div>
+      <div class="service">
+        <h4>Data analysis</h4>
+        <p>Analyze your data to gain insights and make better business decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="bottom-nav">
+    <a href="../Home/index.html" class="nav-link active">Home</a>
+    <a href="../Automations/automations.html" class="nav-link">Automations</a>
+    <a href="../success/success.html" class="nav-link">Success</a>
+    <a href="../pricing/pricing.html" class="nav-link">Pricing</a>
+    <a href="../about/about.html" class="nav-link">About</a>
+    <a href="../contact/contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <script src="../lib/sidebar.js"></script>
+  <script src="../lib/script.js"></script>
+</body>
+</html>

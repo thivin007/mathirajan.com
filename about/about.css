@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b1622;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #0b1622;
+  border-bottom: 1px solid #1e2a38;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+.team-image {
+  display: block;
+  margin: 0 auto 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-members .members {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.member {
+  text-align: center;
+  width: 30%;
+}
+
+.member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.member span {
+  color: #77a0c5;
+  font-size: 0.8rem;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0 20px;
+}
+
+.tag {
+  background-color: #1a2739;
+  border: 1px solid #1e2a38;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0b1622;
+  border-top: 1px solid #1e2a38;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.bottom-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.bottom-nav a.active {
+  color: #ffffff;
+  font-weight: bold;
+}

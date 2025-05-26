@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b1622;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #0b1622;
+  border-bottom: 1px solid #1e2a38;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+.plan {
+  background-color: #121f30;
+  border: 1px solid #1e2a38;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.plan.popular .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #1a73e8;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.plan button {
+  background-color: #1a73e8;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.plan ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.plan ul li::before {
+  content: "✔";
+  color: #1a73e8;
+  margin-right: 8px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0b1622;
+  border-top: 1px solid #1e2a38;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.bottom-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.bottom-nav a.active {
+  color: #ffffff;
+  font-weight: bold;
+}
